@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 02 | PH</title>
+
+    <!-- tailwind css main script -->
+    <link rel="stylesheet" href="./assets/css/app.min.css" />
+  </head>
+  <body class="bg-black text-white">
+    <!-- header section -->
+    <header>
+      <div class="container mx-auto px-2">
+        <div class="flex justify-between items-center gap-4 py-8">
+          <!-- brand -->
+          <div>
+            <h2 class="font-bold font-manrope text-3xl uppercase">logo</h2>
+          </div>
+
+          <!-- bars -->
+          <div class="md:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="size-8"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
+              />
+            </svg>
+          </div>
+
+          <!-- navigation -->
+          <nav class="hidden md:block">
+            <ul class="flex justify-center items-center gap-6">
+              <li>
+                <a href="#" class="font-manrope font-normal text-base">Home</a>
+              </li>
+              <li>
+                <a href="#" class="font-manrope font-normal text-base"
+                  >About Me</a
+                >
+              </li>
+              <li>
+                <a href="#" class="font-manrope font-normal text-base"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a href="#" class="font-manrope font-normal text-base"
+                  >Testimonials</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-base text-black px-8 py-3 bg-primary rounded-full"
+                  >Download CV</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- main section -->
+    <main class="space-y-16">
+      <!-- hero section -->
+      <section id="hero" class="relative">
+        <div class="container mx-auto px-2">
+          <div
+            class="flex justify-between items-center gap-8 flex-col-reverse md:flex-row"
+          >
+            <!-- hero left side -->
+            <div class="max-w-md lg:max-w-xl space-y-4 z-50">
+              <h5 class="text-lg text-secondary font-manrope font-normal">
+                Web Developer
+              </h5>
+              <h1
+                class="text-2xl md:text-5xl text-white font-montagu-slab font-bold uppercase"
+              >
+                HI! This is
+                <span class="md:block text-primary">Sohel Rana</span>
+              </h1>
+              <p
+                class="text-sm md:text-lg font-normal font-manrope text-secondary"
+              >
+                As a web designer with four years of experience, I specialize in
+                creating visually appealing and user-friendly websites. My
+                expertise includes responsive design, UI/UX principles, and
+                collaborating with clients to bring their visions to life.
+              </p>
+
+              <div class="flex justify-start items-center gap-4 flex-wrap">
+                <button
+                  class="text-base text-black px-8 py-2 bg-primary rounded-full"
+                >
+                  Let’s Connect
+                </button>
+                <button class="flex items-center gap-2">
+                  <span>View Portfolios</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- hero right side -->
+            <div class="z-50">
+              <img src="./assets/img/hero_profile_img.png" alt="" />
+            </div>
+            <!-- overlay -->
+            <div
+              class="absolute bottom-0 right-0 w-2/4 h-96 bg-gradient-to-r from-[#17171A] to-[#17171A00] z-10"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- skills section -->
+      <section id="skills">
+        <div class="container mx-auto px-2">
+          <div class="max-w-3xl mx-auto text-center space-y-2">
+            <h5
+              class="text-sm md:text-lg font-medium text-secondary uppercase font-manrope"
+            >
+              Specialties
+            </h5>
+            <h2 class="text-2xl md:text-5xl font-manrope font-bold uppercase">
+              My specialties
+            </h2>
+            <p
+              class="text-sm md:text-lg font-normal font-manrope text-secondary"
+            >
+              As a web designer with four years of experience, I specialize in
+              creating visually appealing and user-friendly websites. My
+              expertise includes responsive design.
+            </p>
+          </div>
+
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 pt-8 gap-2"
+          >
+            <!-- skill item -->
+            <div
+              class="px-4 md:px-8 py-6 md:py-12 flex justify-center items-center gap-y-4 flex-col"
+            >
+              <img src="./assets/img/skills/Front-End Development.png" alt="" />
+
+              <h3
+                class="text-sm md:text-lg font-semibold font-manrope text-center"
+              >
+                Front-End Development
+              </h3>
+
+              <p
+                class="text-sm font-normal font-manrope text-secondary text-center"
+              >
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+            </div>
+
+            <!-- skill item -->
+            <div
+              class="px-4 md:px-8 py-6 md:py-12 flex justify-center items-center gap-y-4 flex-col"
+            >
+              <img src="./assets/img/skills/Back-End Development.png" alt="" />
+
+              <h3
+                class="text-sm md:text-lg font-semibold font-manrope text-center"
+              >
+                Back-End Development
+              </h3>
+
+              <p
+                class="text-sm font-normal font-manrope text-secondary text-center"
+              >
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+            </div>
+
+            <!-- skill item -->
+            <div
+              class="px-4 md:px-8 py-6 md:py-12 flex justify-center items-center gap-y-4 flex-col"
+            >
+              <img
+                src="./assets/img/skills/Full-Stack Development.png"
+                alt=""
+              />
+
+              <h3
+                class="text-sm md:text-lg font-semibold font-manrope text-center"
+              >
+                Full-Stack Development
+              </h3>
+
+              <p
+                class="text-sm font-normal font-manrope text-secondary text-center"
+              >
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+            </div>
+
+            <!-- skill item -->
+            <div
+              class="px-4 md:px-8 py-6 md:py-12 flex justify-center items-center gap-y-4 flex-col"
+            >
+              <img
+                src="./assets/img/skills/Web Application Security.png"
+                alt=""
+              />
+
+              <h3
+                class="text-sm md:text-lg font-semibold font-manrope text-center"
+              >
+                Web Application Security
+              </h3>
+
+              <p
+                class="text-sm font-normal font-manrope text-secondary text-center"
+              >
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+            </div>
+
+            <!-- skill item -->
+            <div
+              class="px-4 md:px-8 py-6 md:py-12 flex justify-center items-center gap-y-4 flex-col"
+            >
+              <img
+                src="./assets/img/skills/E-commerce Development.png"
+                alt=""
+              />
+
+              <h3
+                class="text-sm md:text-lg font-semibold font-manrope text-center"
+              >
+                E-commerce Development
+              </h3>
+
+              <p
+                class="text-sm font-normal font-manrope text-secondary text-center"
+              >
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+            </div>
+
+            <!-- skill item -->
+            <div
+              class="px-4 md:px-8 py-6 md:py-12 flex justify-center items-center gap-y-4 flex-col"
+            >
+              <img
+                src="./assets/img/skills/Cloud-Based Development.png"
+                alt=""
+              />
+
+              <h3
+                class="text-sm md:text-lg font-semibold font-manrope text-center"
+              >
+                Cloud-Based Development
+              </h3>
+
+              <p
+                class="text-sm font-normal font-manrope text-secondary text-center"
+              >
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+            </div>
+
+            <!-- skill item -->
+            <div
+              class="px-4 md:px-8 py-6 md:py-12 flex justify-center items-center gap-y-4 flex-col"
+            >
+              <img src="./assets/img/skills/Progressive Web Apps.png" alt="" />
+
+              <h3
+                class="text-sm md:text-lg font-semibold font-manrope text-center"
+              >
+                Progressive Web Apps
+              </h3>
+
+              <p
+                class="text-sm font-normal font-manrope text-secondary text-center"
+              >
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+            </div>
+
+            <!-- skill item -->
+            <div
+              class="px-4 md:px-8 py-6 md:py-12 flex justify-center items-center gap-y-4 flex-col"
+            >
+              <img
+                src="./assets/img/skills/AI-Powered Development.png"
+                alt=""
+              />
+
+              <h3
+                class="text-sm md:text-lg font-semibold font-manrope text-center"
+              >
+                AI-Powered Development
+              </h3>
+
+              <p
+                class="text-sm font-normal font-manrope text-secondary text-center"
+              >
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- recent work section -->
+      <section id="recentWork">
+        <div class="container mx-auto px-2">
+          <div class="max-w-3xl mx-auto text-center space-y-2">
+            <h5
+              class="text-sm md:text-lg font-medium text-secondary uppercase font-manrope"
+            >
+              Recent works
+            </h5>
+            <h2 class="text-2xl md:text-5xl font-manrope font-bold uppercase">
+              My Recent works
+            </h2>
+            <p
+              class="text-sm md:text-lg font-normal font-manrope text-secondary"
+            >
+              As a web designer with four years of experience, I specialize in
+              creating visually appealing and user-friendly websites. My
+              expertise includes responsive design.
+            </p>
+          </div>
+
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 pt-8 gap-4"
+          >
+            <div class="h-[260px] bg-white opacity-15"></div>
+            <div class="h-[260px] bg-white opacity-15"></div>
+            <div class="h-[260px] bg-white opacity-15"></div>
+            <div class="h-[260px] bg-white opacity-15"></div>
+            <div class="h-[260px] bg-white opacity-15"></div>
+            <div class="h-[260px] bg-white opacity-15"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- service section -->
+      <section id="service">
+        <div class="container mx-auto px-2">
+          <div class="max-w-3xl mx-auto text-center space-y-2">
+            <h5
+              class="text-sm md:text-lg font-medium text-secondary uppercase font-manrope"
+            >
+              Services
+            </h5>
+            <h2 class="text-2xl md:text-5xl font-manrope font-bold uppercase">
+              My other services
+            </h2>
+            <p
+              class="text-sm md:text-lg font-normal font-manrope text-secondary"
+            >
+              As a web designer with four years of experience, I specialize in
+              creating visually appealing and user-friendly websites. My
+              expertise includes responsive design.
+            </p>
+          </div>
+
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 pt-8 gap-2"
+          >
+            <!-- service item -->
+            <div
+              class="p-4 py-6 md:py-12 flex justify-center items-center gap-y-4 flex-col"
+            >
+              <h3
+                class="text-lg font-manrope font-medium text-secondary mb-2 uppercase"
+                class="text-sm md:text-lg font-semibold font-manrope text-center"
+              >
+                Website Development
+              </h3>
+              <p
+                class="text-sm font-normal font-manrope text-secondary text-center"
+              >
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+            </div>
+            <!-- service item -->
+            <div
+              class="p-4 py-6 md:py-12 flex justify-center items-center gap-y-4 flex-col"
+            >
+              <h3
+                class="text-sm md:text-lg font-semibold font-manrope text-center"
+              >
+                E-Commerce Development
+              </h3>
+              <p
+                class="text-sm font-normal font-manrope text-secondary text-center"
+              >
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+            </div>
+            <!-- service item -->
+            <div
+              class="p-4 py-6 md:py-12 flex justify-center items-center gap-y-4 flex-col"
+            >
+              <h3
+                class="text-sm md:text-lg font-semibold font-manrope text-center"
+              >
+                Web App Development
+              </h3>
+              <p
+                class="text-sm font-normal font-manrope text-secondary text-center"
+              >
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+            </div>
+            <!-- service item -->
+            <div
+              class="p-4 py-6 md:py-12 flex justify-center items-center gap-y-4 flex-col"
+            >
+              <h3
+                class="text-sm md:text-lg font-semibold font-manrope text-center"
+              >
+                API Dev. & Integration
+              </h3>
+              <p
+                class="text-sm font-normal font-manrope text-secondary text-center"
+              >
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+            </div>
+            <!-- service item -->
+            <div
+              class="p-4 py-6 md:py-12 flex justify-center items-center gap-y-4 flex-col"
+            >
+              <h3
+                class="text-sm md:text-lg font-semibold font-manrope text-center"
+              >
+                Cloud-Based Solutions
+              </h3>
+              <p
+                class="text-sm font-normal font-manrope text-secondary text-center"
+              >
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+            </div>
+            <!-- service item -->
+            <div
+              class="p-4 py-6 md:py-12 flex justify-center items-center gap-y-4 flex-col"
+            >
+              <h3
+                class="text-sm md:text-lg font-semibold font-manrope text-center"
+              >
+                Web Perform. Optimization
+              </h3>
+              <p
+                class="text-sm font-normal font-manrope text-secondary text-center"
+              >
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+            </div>
+            <!-- service item -->
+            <div
+              class="p-4 py-6 md:py-12 flex justify-center items-center gap-y-4 flex-col"
+            >
+              <h3
+                class="text-sm md:text-lg font-semibold font-manrope text-center"
+              >
+                (SEO) Services
+              </h3>
+              <p
+                class="text-sm font-normal font-manrope text-secondary text-center"
+              >
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+            </div>
+            <!-- service item -->
+            <div
+              class="p-4 py-6 md:py-12 flex justify-center items-center gap-y-4 flex-col"
+            >
+              <h3
+                class="text-sm md:text-lg font-semibold font-manrope text-center"
+              >
+                Website Maint. & Support
+              </h3>
+              <p
+                class="text-sm font-normal font-manrope text-secondary text-center"
+              >
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- faq section -->
+      <section id="faq">
+        <div class="container mx-auto px-2">
+          <div>
+            <h5
+              class="text-sm md:text-lg font-medium text-secondary uppercase font-manrope"
+            >
+              FAQ’s
+            </h5>
+            <h2 class="text-2xl md:text-5xl font-manrope font-bold uppercase">
+              Frequently Asked Questions
+            </h2>
+          </div>
+
+          <div class="py-10">
+            <!-- faq item -->
+            <div class="p-4 space-y-4">
+              <div class="flex justify-between items-center">
+                <h3
+                  class="text-lg font-manrope font-medium uppercase text-[#AFB0B6]"
+                >
+                  What areas of web development do you focus on?
+                </h3>
+                <div class="w-8 flex justify-end items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 15.75 7.5-7.5 7.5 7.5"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <p class="text-sm text-body font-normal font-manrope">
+                I specialize in web development, creating websites that deliver
+                unique user experiences.
+              </p>
+            </div>
+            <!-- faq item -->
+            <div class="p-4 space-y-4">
+              <div class="flex justify-between items-center">
+                <h3
+                  class="text-lg font-manrope font-medium uppercase text-[#AFB0B6]"
+                >
+                  How can I schedule a web development consultation with you?
+                </h3>
+
+                <div class="w-8 flex justify-end items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <!-- faq item -->
+            <div class="p-4 space-y-4">
+              <div class="flex justify-between items-center">
+                <h3
+                  class="text-lg font-manrope font-medium uppercase text-[#AFB0B6]"
+                >
+                  Can I choose a specific platform for my website?
+                </h3>
+                <div class="w-8 flex justify-end items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <!-- faq item -->
+            <div class="p-4 space-y-4">
+              <div class="flex justify-between items-center">
+                <h3
+                  class="text-lg font-manrope font-medium uppercase text-[#AFB0B6]"
+                >
+                  What tools and technologies do you use for web development?
+                </h3>
+                <div class="w-8 flex justify-end items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <!-- faq item -->
+            <div class="p-4 space-y-4">
+              <div class="flex justify-between items-center">
+                <h3
+                  class="text-lg font-manrope font-medium uppercase text-[#AFB0B6]"
+                >
+                  Can I choose a specific platform for my website?
+                </h3>
+                <div class="w-8 flex justify-end items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer section -->
+    <footer>
+      <!-- footer top section -->
+      <section id="footerTop">
+        <div class="container mx-auto px-2">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 pt-8 gap-2 p-12"
+          >
+            <!-- footer nav item -->
+            <div>
+              <h3
+                class="text-lg font-manrope font-medium text-secondary mb-2 uppercase"
+              >
+                Solutions
+              </h3>
+              <ul class="space-y-1">
+                <li>
+                  <a href="#" class="text-lg font-normal uppercase"
+                    >Glintopia</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-lg font-normal uppercase">Fluxway</a>
+                </li>
+                <li>
+                  <a href="#" class="text-lg font-normal uppercase">Fable’s</a>
+                </li>
+                <li>
+                  <a href="#" class="text-lg font-normal uppercase"
+                    >PowerCore</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- footer nav item -->
+            <div>
+              <h3
+                class="text-lg font-manrope font-medium text-secondary mb-2 uppercase"
+              >
+                Customers
+              </h3>
+
+              <ul class="space-y-1">
+                <li>
+                  <a href="#" class="text-lg font-normal uppercase"
+                    >Glintopia</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-lg font-normal uppercase">Fluxway</a>
+                </li>
+                <li>
+                  <a href="#" class="text-lg font-normal uppercase">Fable’s</a>
+                </li>
+                <li>
+                  <a href="#" class="text-lg font-normal uppercase"
+                    >PowerCore</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- footer nav item -->
+            <div>
+              <h3
+                class="text-lg font-manrope font-medium text-secondary mb-2 uppercase"
+              >
+                Partners
+              </h3>
+
+              <ul class="space-y-1">
+                <li>
+                  <a href="#" class="text-lg font-normal uppercase"
+                    >Glintopia</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-lg font-normal uppercase">Fluxway</a>
+                </li>
+                <li>
+                  <a href="#" class="text-lg font-normal uppercase">Fable’s</a>
+                </li>
+                <li>
+                  <a href="#" class="text-lg font-normal uppercase"
+                    >PowerCore</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- footer nav item -->
+            <div>
+              <h3
+                class="text-lg font-manrope font-medium text-secondary mb-2 uppercase"
+              >
+                Stakeholders
+              </h3>
+
+              <ul class="space-y-1">
+                <li>
+                  <a href="#" class="text-lg font-normal uppercase"
+                    >Glintopia</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-lg font-normal uppercase">Fluxway</a>
+                </li>
+                <li>
+                  <a href="#" class="text-lg font-normal uppercase">Fable’s</a>
+                </li>
+                <li>
+                  <a href="#" class="text-lg font-normal uppercase"
+                    >PowerCore</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- footer nav item -->
+            <div>
+              <h3
+                class="text-lg font-manrope font-medium text-secondary mb-2 uppercase"
+              >
+                Offerings
+              </h3>
+
+              <ul class="space-y-1">
+                <li>
+                  <a href="#" class="text-lg font-normal uppercase"
+                    >Glintopia</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-lg font-normal uppercase">Fluxway</a>
+                </li>
+                <li>
+                  <a href="#" class="text-lg font-normal uppercase">Fable’s</a>
+                </li>
+                <li>
+                  <a href="#" class="text-lg font-normal uppercase"
+                    >PowerCore</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- copyright section -->
+      <section>
+        <div class="container mx-auto px-2">
+          <div
+            class="flex justify-between items-center flex-wrap py-4 text-[#797C86]"
+          >
+            <ul class="flex justify-between items-center flex-wrap gap-2">
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+
+            <p>© 2024 All rights reserved.</p>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
